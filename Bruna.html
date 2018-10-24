@@ -1,0 +1,451 @@
+<!DOCTYPE html><html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Website over honden</title>
+        
+    </head>
+    <style>
+        #F{
+            color:white;
+            padding: 8px 8px 8px 32px;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .top{
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100%;
+            overflow: hidden;
+            background-color: #3979f4;
+            border: 2px solid black;
+            margin-bottom:30px;
+            transition-duration: 0.5s;
+            border-bottom-left-radius: 10px;
+            z-index: 20;
+        }
+        .top a{
+            padding:14px 16px;
+            float:left;
+            text-align: center;
+            border-right: 2px solid black;
+            color:azure;
+            font-family:"Segoe UI",Arial,sans-serif;
+            font-size:20px;
+            text-decoration:none;
+            transition-duration: 0.5s;
+            
+        }
+        
+        .home{
+           background-color: #5a5b60;
+            
+        }
+        .top a:hover{
+            color:black;
+            background-color:lightgray;
+            cursor: pointer; 
+        }
+        .button{
+            position:relative;
+            top:100px;
+            background-color: gray;
+            width: 50px;
+            height: 20px;
+        }
+        #eerste_alinea{
+            position:relative;
+            font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+            font-size:15px;
+            margin-left:0px;
+            left:100px;
+            width:75%;
+        }
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+        
+        
+        
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+* {
+  box-sizing: border-box;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,,.text {font-size: 11px}
+}
+            
+        
+#bang{
+     position: absolute;
+     top:1000px;
+     border: 1px solid black;
+     background-color: gainsboro;
+     width:100%;
+     padding:30px; 
+     border-radius: 15px;
+     transition: 2s;
+            
+}           
+ #herkomst{
+     position: absolute;
+     top:100px;
+     border: 1px solid black;
+     background-color: gainsboro;
+     width:100%;
+     padding:30px; 
+     border-radius: 15px;
+     transition: 2s;
+ }    
+ #karakter{
+     position: absolute;
+     top:450px;
+     border: 1px solid black;
+     background-color: gainsboro;
+     width:100%;
+     padding:30px;  
+     border-radius: 15px;
+     transition: 2s;
+ }  
+     
+ #navbtn{
+     position: fixed;
+     right:10px;
+     top:12px;
+     height:30px;
+     background-color: dodgerblue;
+     border: 1px solid black;
+     border-radius: 5px;
+     color:black;
+     transition: 0.5s;
+     z-index: 100;
+ }
+    
+ #navbtn:hover{
+     color:white;
+     background-color: royalblue;
+ }
+        
+ #ZN{
+     width:300px;
+     margin:0px;
+     float:left;
+     border: 2px solid black;
+}
+        #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    color: red;
+    font-family: monospace;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+</style>
+
+    
+<html>
+<body>
+    
+    <div id="overlay" onclick="off()">
+  <div id="text">Dit bestand is mogelijk schadelijk voor je computer!!!</div>
+</div>
+
+<div style="padding:20px">
+  
+    
+ <div id="mySidenav" class="sidenav">
+           <h1 id="F">Foto's:</h1>
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <a href="Foto's/Bruna-closeup.jpeg" download>Bruna Colseup</a>
+           <a href="Foto's/Zito+bruna.jpeg" download>Zito en Bruna</a>
+           <a href="Foto's/brunadiewandelt.JPG" download>Bruna die wandelt</a>
+           <a href="Foto's/brunaophetgras.PNG" download>Bruna op het gras</a>
+           <a href="Foto's/Brunadiespeelt.png" download>Bruna die speelt</a>
+           <a onclick="on()">Foto van rob</a>
+         </div>
+<div id="main">
+    
+
+         
+
+        <div class="top" id="top">
+          <a href="index.html">Home</a>
+          <a href="Zito.html">Zito</a>
+          <a class="home" href="Bruna.html">Bruna</a>
+          <a href="knoppen.html">Knoppenpagina</a>
+          <a href="afbeelding.html">Afbeeldingenpagina</a>
+        </div>
+    
+   
+    <button id="navbtn" onclick="openNav()">Download Foto's</button>
+    
+    
+    
+    <div id="herkomst">
+    <img id="ZN"src="Foto's/Bruna-closeup.jpeg" alt="Zito toen hij net hier was">
+    <div id="eerste_alinea">
+        
+        <h1>Herkomst</h1>
+        <p>
+   We hebben Bruna nu al 3 jaar, we hebben haar gekocht in een dierenasiel ergens in <a href="https://www.antwerpen.be/nl/home"  target="_blank">Antwerpen</a>.
+        </p>
+    </div>
+    </div>
+    
+    <div id="karakter">
+    <div id="ZN"><div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="Foto's/Zito+bruna.jpeg" style="width:100%">
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="Foto's/brunadiewandelt.JPG" style="width:100%">
+</div>
+        
+ <div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="Foto's/brunaophetgras.PNG" style="width:100%">
+</div>
+        
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="Foto's/Brunadiespeelt.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+</div>
+<br>
+</div>
+    <div id="eerste_alinea">
+        
+        <h1>Karakter</h1>
+        <p>
+ Bruna is een lieve maar vooral bange hond, hierove later meer. Ze kan goed omgaan met andere honden en mensen als ze ze eenmaal heeft leren kennen.
+        </p>
+    </div>
+    </div>
+    
+    <div id="bang">
+    <img id="ZN"src="Foto's/FotoRob.JPG" alt="Rob">
+    <div id="eerste_alinea">
+        
+        <h1>Bruna en Rob</h1>
+        <p>
+   Zoals eerder gezegd is Bruna heeel bang van onbekende mensen, maar iemand waar ze extra bang voor was was Rob.<br><br>(foto met toestemming van Rob)
+        </p>
+    </div>
+    </div>
+    </div>
+        
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <script>
+    
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    
+    document.getElementById("main").style.transition = "2s";
+    document.getElementById("herkomst").style.transition = "2s"; 
+    document.getElementById("navbtn").style.display = "none";
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("top").style.left = "250px";
+    document.getElementById("herkomst").style.left = "270px";
+    document.getElementById("top").style.borderRadius = "0px";
+    
+    
+}
+
+function closeNav() {
+    document.getElementById("herkomst").style.transition = "0.5s";
+    document.getElementById("main").style.transition = "0.5s";
+    document.getElementById("navbtn").style.display = "block";
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("top").style.left = "0px";
+    document.getElementById("herkomst").style.left = "20px";
+    document.getElementById("top").style.borderBottomLeftRadius = "10px";
+ 
+}
+            
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+ 
+            
+            
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > 4) {slideIndex = 1;}    
+  if (n < 1) {slideIndex = 4;}
+  for (i = 0; i < 4; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+    </body>
+</html>
