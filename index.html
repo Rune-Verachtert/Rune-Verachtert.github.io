@@ -1,0 +1,355 @@
+<!DOCTYPE html><html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Website over honden</title>
+        
+    </head>
+    <style>
+        h1{
+            color:white;
+            padding: 8px 8px 8px 32px;
+            
+        }
+        .top{
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100%;
+            overflow: hidden;
+            background-color: #3979f4;
+            border: 2px solid black;
+            margin-bottom:30px;
+            transition-duration: 0.5s;
+            border-bottom-left-radius: 10px;
+            z-index: 20;
+        }
+        .top a{
+            padding:14px 16px;
+            float:left;
+            text-align: center;
+            border-right: 2px solid black;
+            color:azure;
+            font-family:"Segoe UI",Arial,sans-serif;
+            font-size:20px;
+            text-decoration:none;
+            transition-duration: 0.5s;
+            
+        }
+        
+        .home{
+           background-color: #5a5b60;
+            
+        }
+        .top a:hover{
+            color:black;
+            background-color:lightgray;
+            cursor: pointer; 
+        }
+        .button{
+            position:relative;
+            top:100px;
+            background-color: gray;
+            width: 50px;
+            height: 20px;
+        }
+        #eerste_alinea{
+            position:relative;
+            font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+            font-size:15px;
+            margin-left:0px;
+            left:0%;
+            top:100px;
+        }
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+        
+        
+        
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+        
+        
+        
+        
+        
+        
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: absolute;
+  width:100%;
+  background-color:gainsboro;
+  left:0px;
+  padding-left:25%;
+  padding-right:25%;
+  border-bottom: 1px solid gray;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/* Container for image text */
+.caption-container {
+  
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  transition:1s;
+  
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+    
+  
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 33.3333333%;
+    
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.3;
+    transition: .5s;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+    transition: .5s;
+}
+
+     
+ #bottom{
+     position: relative;
+     top:800px;
+     
+ }       
+     
+ #navbtn{
+     position: absolute;
+     right:10px;
+     top:12px;
+     height:30px;
+     background-color: dodgerblue;
+     border: 1px solid black;
+     border-radius: 5px;
+     color:black;
+     transition: 0.5s;
+     z-index: 21;
+ }
+    
+ #navbtn:hover{
+     color:white;
+     background-color: royalblue;
+ }
+</style>
+
+    
+<html>
+<body>
+
+
+    
+         <div id="mySidenav" class="sidenav">
+           <h1>Foto's:</h1>
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <a href="Foto's/Brunadiespeelt.png" download>Bruna die speelt</a>
+           <a href="Foto's/zitodieslaapt.JPG" download>Zito die slaapt</a>
+           <a href="Foto's/brunaophetgras.PNG" download>Bruna op het gras</a>
+         </div>
+<div id="main">   
+    
+    
+    <div class="container" id="container">
+  <div class="mySlides">
+    <img src="Foto's/Brunadiespeelt.png" style="width:100%" alt="Bruna die speelt">
+  </div>
+
+  
+  <div class="mySlides">
+    <img src="Foto's/zitodieslaapt.JPG" style="width:100%" alt="Zito die slaapt">
+  </div>
+        
+  <div class="mySlides">
+    <img src="Foto's/brunaophetgras.PNG" style="width:100%" alt="Bruna op het gras">
+  </div>
+
+  
+    
+    
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Foto's/Brunadiespeelt.png" style="width:100%" onclick="currentSlide(1)" alt="Bruna die speelt">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="Foto's/zitodieslaapt.JPG" style="width:100%" onclick="currentSlide(2)" alt="Zito die slaapt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Foto's/brunaophetgras.PNG" style="width:100%" onclick="currentSlide(3)" alt="Bruna op het gras">
+      </div>
+  </div>
+</div>
+         
+    
+        <div class="top" id="top">
+          <a class="home" href="index.html">Home</a>
+          <a href="Zito.html">Zito</a>
+          <a href="Bruna.html">Bruna</a>
+          <a href="knoppen.html">Knoppenpagina</a>
+          <a href="afbeelding.html">Afbeeldingenpagina</a>
+        </div>
+    
+    
+    <button id="navbtn" onclick="openNav()">Download Foto's</button>
+    
+    
+    <div id="bottom">
+    <div id="eerste_alinea">
+        
+        <p >Hallo, deze website gaat over mijn 2 honden: <a href="Zito.html" style="color:blue; text-decoration: none;">Zito</a> en <a href="Bruna.html" style="color:blue; text-decoration: none;">Bruna</a>. Meer informatie kan je vinden op de pagina's die ik heb gemaakt voor elke hond. Je kan trouwen alle foto's downloaden door op de knop rechtsboven te duwen.
+        </p>
+    </div>
+    </div>
+        </div>
+        
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <script>
+    
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("top").style.left = "250px";
+    document.getElementById("container").style.left = "250px";
+    document.getElementById("top").style.borderRadius = "0px";
+    
+    document.getElementById("container").style.transition = "2s"; document.getElementById("main").style.transition = "2s";
+    
+    document.getElementById("navbtn").style.display = "none";
+    
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("top").style.left = "0px";
+    document.getElementById("container").style.left = "0px";
+
+    document.getElementById("top").style.borderBottomLeftRadius = "10px";
+    document.getElementById("container").style.transition = "0.5s";
+    document.getElementById("main").style.transition = "0.5s";
+    
+    document.getElementById("navbtn").style.display = "block";
+}
+
+    
+var slideIndex = 1;
+showSlides(1);
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    </body>
+</html>
